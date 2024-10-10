@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+     overflow-x: hidden;
+
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.carrossel {
+    width: 100%;
+    height: 100%;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    text-align: center;
+    font-size:xx-large;
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color: cornsilk;
+    font-size: 60px;
+    line-height: 2;
+}
+
+#titulo1{
+    color: white;
+    padding-top: 10%;
+    font-size: 80px;
+    line-height: 5;
+    font-style: initial;
+    text-align: center;
+    font-family: 'Montserrat' sans-serif;
+}
+
+.modelos {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5% 0;
+    background-color: rgb(42, 51, 82);
+    /* width: 100%; */
+    
+}
+
+#resenha {
+    background-color: rgb(36, 42, 66);
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color: cornsilk;
+    font-size: 4vw;
+}
+
+.item {
+    
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color: cornsilk;
+    font-size: 2vw;
+}
+
+.dois {
+    width: 40%;
+}
+
+.rev {
+    display:flex;
+    overflow-x: hidden;
+    text-align: justify;
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    margin-top: 10%;
+
+}
+
+.meta {
+    display: flex;
+    overflow-x: hidden;
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    margin-top: 10%;
+
+}
+
+.pijama {
+    display:flex;
+    overflow-x: hidden;
+    font-style:initial;
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    margin-top: 10%;
+
+
+}
+
+.esquerdo {
+ padding-left: 15%;
+}
+
+
+
+.item img {
+    height: 370px;
+    padding: 20px;
+}
+
+.titulo2 {
+    font-size: 60px;
+    line-height: 2;
+    font-style: initial;
+    text-align: center;
+    background-color: black;
+    color: white;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.s1 {
+        width: 100%;
+        height: 90%;
+        font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    font-size: larger ;    
+}
+
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    font-size: larger;   
+    padding-bottom: 2%; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+img > .carrossel {
+    width: 5vh;
+    height: 5vh;
+}
+
+
+.setenta {
+width: 100%;
+text-align: center;
+align-items: center;
+}
+
+.justificado {
+    text-align: justify;
+
+}
+
+#qmsomos {
+    padding-left: 10%;
+    width: 45%
+}
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+
+}
+
+.dois {
+    width: 40%;
+}
+
+#fundo {
+    width: 100%;
+    height: 120vh;
+    text-align: center;
+    background: url(fundo.webp.PNG) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+    padding-top: 90px;
+}
+
+
+#formulario {
+    padding: 80px 4%;
+    background-color: black;
+    height: 100%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 500px;
+    font-family: arial;
+}
+
+form .btn-enviar {
+    margin-top: 10px;
+    text-align: center;
+}
+form .btn-enviar input {
+    width: 120px;
+    background-color: #7a9fab;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+body {
+    background-color: rgb(23, 22, 22);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* HEADER */
+header {
+    background-color:#ffffff;
+    color: white;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    padding: 20px 4%;
+    opacity: 80%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 2px -2px rgb(128, 122, 122);
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    transform: scale(1.25);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 160px;
+
+}
+
+#logo {
+    width: 60px;
+    position: fixed;
+    top: 10px;
+}
+
+#logo:hover {
+    transform: none;
+}
+
+header .button-contato button{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: times;
+    background-color: #9db7c0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.menu-desktop {
+        color:rgb(210, 209, 209);
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+}
+
+footer {
+    background-color: #403e3e;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #b6b2b2;
+}
+
+/* Botões "Ver mais" */
+button {
+    padding: 10px 20px;
+    background-color: #9db7c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a9fab;
+}
+
+.gallery {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(3, 80vw);
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem; 
+	overflow: scroll;
+	height: 100%;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem; 
+}
+
+#imgautor {
+text-align: center;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+/* li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+} */
+
+
+@media screen and (max-width: 1009px) {
+    /* CLASSES GERAIS */
+    .flex, .modelos {
+        flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+        
+    }
+
+    .esquerdo {
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+
+    .coluna {
+        float: none;
+    padding: 0 0%;
+    position: relative;
+    width: 100%;
+
+    
+    }
+    .modelos {
+        padding: 0 0 0 0;
+        text-align: center;
+        
+    }
+        #imglivros {
+            text-align: center;
+            width: 70%; 
+            float: none;
+            
+        }
+
+
+        #qmsomos {
+            width: 90%;
+        }
+
+
+    /* CABECALHO - HEADER */
+        .menu-desktop, .button-contato {
+            display: none;
+        }
+
+        .logo {
+            width: 78%;
+            position: absolute;
+            text-align: center;
+        }
+
+        header nav ul li {
+            padding: 0 10px;
+        }
+
+        .item {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        .guitarrista {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        #titulo1 {
+            font-size: 40px;
+        }
+
+        .titulo2 {
+            font-size: 30px;
+        }
+    }

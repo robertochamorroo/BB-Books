@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="Website Icon" href="livro.png">
+    
+    <title>B&B Books</title>
+
+    <script>
+        
+        function toggleText(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<header>
+    <div class="interface">
+        <div class="logo">
+            <a id="logo" href="#resumo">
+                <img id="logo" src="logo.png" alt="img de livros">
+            </a>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#resenha">Resenha</a></li>
+            </ul>
+        </nav>
+
+        <div class="button-contato">
+            <a href="#formulario">
+                <button>Contato</button>
+            </a>
+        </div>
+
+    </div> 
+</header>  
+
+<body>
+    <div id="fundo">
+        <h1> B&B Books</h1>
+    </div>
+
+    <section id="resumo" class="s1">
+        <h1 class="titulo"> Quem Somos?</h1>
+        <br>
+        <br>
+
+        <div id="imglivros" class="coluna dois">
+            <img src="blog.jpeg" width="120%" height="100%" alt="Livros" />
+        </div>
+
+        <div id="qmsomos" class="coluna dois">
+            <h1 class="centralizado"> A trajetória histórica da B&B </h1>
+            <br><br>
+            <p class="justificado ">
+                Olá, somos Bernardo Renner e Bebeto Chamorro, dois amigos que partilham uma grande paixão por livros. Decidimos criar este blog para trocar ideias sobre as obras que nos marcaram e, claro, para descobrir novos mundos literários com vocês! Aqui, vamos escrever resenhas, dar sugestões de leitura e também falar sobre aqueles autores menos conhecidos que merecem destaque. Cada livro é uma viagem, e queremos que vocês embarquem conosco! Fiquem à vontade para comentar e sugerir obras, porque o blog é tão nosso quanto vosso. Bora conversar sobre livros? 
+            </p>
+        </div>
+    </section>
+
+    <div>
+        <h1 id="resenha" class="titulo">Resenha de Livros</h1>
+    </div>
+
+    <section class="modelos esquerdo">
+        <!-- Revolução dos Bichos -->
+        <div class="item coluna dois">
+            <h2>Revolução dos Bichos</h2>
+            <br>
+            <img src="rev.jpg" alt="Revolução dos Bichos">
+            <button onclick="toggleText('revText')">Saiba mais!</button>
+        </div>
+      
+
+        <div class="rev coluna dois" id="revText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>Esta fábula política satírica retrata uma revolta de animais contra seus donos humanos em uma fazenda, com o objetivo de estabelecer uma sociedade igualitária. No entanto, à medida que o poder se concentra entre os líderes, especialmente o porco Napoleão, a utopia se transforma em uma ditadura corrupta, refletindo as traições das revoluções políticas, especialmente a Revolução Russa.</p>
+            <br>
+            <h4> Avaliação: 4.5/5 </h4>
+        </div>
+
+        <br>
+
+        <!-- Metamorfose -->
+        <div class="item coluna dois">
+            <h2>Metamorfose</h2>
+            <br>
+            <img src="meta.jpg" alt="Metamorfose">
+            <button onclick="toggleText('metaText')">Saiba mais!</button>
+        </div>
+        <br>
+
+        <div class="meta coluna dois" id="metaText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>Neste conto angustiante, Gregor Samsa, um homem comum, acorda transformado em um inseto gigante. A história explora o isolamento, a alienação e a desumanização enquanto Gregor luta para lidar com sua nova condição, e sua família, que inicialmente demonstra compaixão, gradualmente o rejeita. A obra é uma reflexão sobre o sofrimento humano e a natureza da identidade.</p>
+            <br>
+            <h4> Avaliação: 4.3/5 </h4>
+        </div>
+
+        <!-- O Menino do Pijama Listrado -->
+        <div class="item coluna dois">
+            <h2>O Menino do Pijama Listrado</h2>
+            <br>
+            <img src="pijama.jpg" alt="O menino do pijama listrado">
+            <button onclick="toggleText('pijamaText')">Saiba mais!</button>
+        </div>
+        <br>
+
+        <div class="pijama coluna dois" id="pijamaText" style="display:none;">
+            <h2> Resenha</h2>
+            <br>
+            <p>O romance se passa durante a Segunda Guerra Mundial e narra a amizade improvável entre Bruno, o filho de um oficial nazista, e Shmuel, um menino judeu preso em um campo de concentração. A ingenuidade de Bruno contrasta com a dura realidade da guerra e do Holocausto, e o final trágico evidencia o impacto devastador do preconceito e da intolerância.</p>
+            <br>
+            <h4> Avaliação: 5/5 </h4>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="formulario">
+        <div>
+            <h2 class="titulo">NOS AJUDE A MELHORAR!</h2>
+
+            <form action="">
+                <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                <input type="text" name="" id="" placeholder="Seu celular:">
+                <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </div>
+
+    <section id="carrossel">
+
+        <h1 class="titulo">Autores</h1>
+    <ul class="gallery">
+        
+        <li style="background: #e74a1a;">
+            <h3 class="titulo">George Orwell</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">George Orwell, pseudônimo de Eric Arthur Blair (1903-1950), foi um escritor, ensaísta e jornalista britânico, amplamente conhecido por suas críticas à opressão política, à tirania e ao totalitarismo. Nascido na Índia Britânica, Orwell viveu parte de sua infância e juventude no Reino Unido, onde começou sua carreira literária.
+                Orwell é autor de obras célebres como 1984 e A Revolução dos Bichos (Animal Farm), que exploram os perigos do controle autoritário e da manipulação política. 1984 retrata uma distopia onde o governo controla completamente a vida das pessoas, enquanto A Revolução dos Bichos é uma sátira alegórica sobre a ascensão do comunismo na União Soviética.
+                Ele também escreveu sobre questões sociais e econômicas em obras como Na Pior em Paris e Londres e O Caminho para Wigan Pier, onde descreve as dificuldades das classes trabalhadoras. Orwell foi um crítico ferrenho das injustiças sociais, e suas obras são marcadas por uma visão aguçada da política, dos direitos humanos e da liberdade.              
+                Sua prosa clara e seu engajamento político tornaram suas obras amplamente estudadas e influentes até hoje.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="orwell.jpg" alt="George Orwell">
+        </div>
+            </li>
+
+        
+        <li style="background: #5d893b;">
+            <h3 class="titulo">Franz Kafka</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">Franz Kafka (1883-1924) foi um escritor tcheco de língua alemã, conhecido por suas obras complexas e surrealistas que exploram temas de alienação, burocracia, e a condição humana. Nascido em Praga, em uma família de origem judaica, Kafka teve uma educação formal em Direito, mas sua verdadeira paixão estava na escrita.
+
+                As obras de Kafka frequentemente apresentam protagonistas que enfrentam situações absurdas e opressivas, refletindo seu sentimento de impotência diante das instituições sociais e políticas. Seu trabalho mais famoso, A Metamorfose, narra a história de Gregor Samsa, que se transforma inexplicavelmente em um inseto, simbolizando a alienação e a desumanização na vida moderna.
+                
+                Outros escritos notáveis incluem O Processo, que aborda a luta de um homem contra um sistema judicial incompreensível e opressivo, e O Castelo, onde o protagonista busca, em vão, acesso a uma autoridade distante e inacessível. A prosa de Kafka é marcada por um estilo distintivo, que combina o realismo com elementos fantásticos, criando um sentimento de estranhamento.
+                
+                Kafka publicou apenas uma parte de sua obra em vida, e muitos de seus escritos foram encontrados após sua morte e publicados por seu amigo Max Brod, que ignorou seu desejo de destruir os manuscritos. O impacto de Kafka na literatura é imenso, e ele é considerado uma figura central do modernismo, influenciando uma ampla gama de escritores e artistas ao longo do século XX e além.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="kafka.jpeg" alt="Franz Kafka">
+        </div>
+
+
+
+        </li>
+
+
+        <li style="background: #8d8ef9;">
+            <h3 class="titulo">John Boyne</h3>
+            <div class="setenta ">
+            <p class="subtitulo ">John Boyne é um escritor irlandês, nascido em 30 de abril de 1971, conhecido principalmente por seu romance "O Menino do Pijama Listrado" (The Boy in the Striped Pyjamas), publicado em 2006. A obra, que se passa durante a Segunda Guerra Mundial, aborda a amizade entre Bruno, um garoto alemão, e Shmuel, um menino judeu em um campo de concentração, e conquistou leitores ao redor do mundo por seu retrato sensível e comovente do Holocausto.
+
+                Boyne também escreveu diversos outros livros, tanto para adultos quanto para o público jovem, incluindo romances históricos e contemporâneos. Alguns de seus títulos notáveis são "O Pacifista" (The Absolutist), que trata da Primeira Guerra Mundial, e "Fique Onde Está e Então Corra" (Stay Where You Are and Then Leave), também ambientado durante a Primeira Guerra.
+                
+                Seu estilo é marcado pela profundidade emocional e pela habilidade em explorar temas complexos, como guerra, identidade e moralidade. Boyne já recebeu vários prêmios literários e continua a ser um autor reconhecido internacionalmente, com obras traduzidas em mais de 50 idiomas.</p>
+            </div>
+                <div id ='imgautor'>
+            <img  src="boyne.jpg" alt="John Boyne">
+        </div>
+
+
+        </li>
+    </ul>
+    
+    </section>
+
+
+</body>
+
+<footer>
+    <p>&copy; 2024 B&B Books. Todos os direitos reservados.</p>
+</footer>
+
+</html>
