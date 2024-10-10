@@ -136,7 +136,9 @@ body {
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
-
+#resumo {
+    height: 100%;
+}
 
 .s1 {
         width: 100%;
@@ -425,9 +427,8 @@ text-align: center;
     }
         #imglivros {
             text-align: center;
-            width: 70%; 
+            width: 100%; 
             float: none;
-            
         }
 
 
